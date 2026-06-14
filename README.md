@@ -17,7 +17,7 @@ Use `run.bat` for a live run only after a clean dry-run review.
 
 ## Local AI
 V1 uses Ollama locally for scoring, QC, and unknown Easy Apply form questions.
-It does not require OpenRouter or other cloud LLM API keys.
+It does not require cloud LLM API keys.
 
 ## Private Files
 `setup_wizard.py` creates a local `config.yaml` file. It contains personal
