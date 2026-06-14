@@ -1,0 +1,79 @@
+# JobHunterJP example configuration.
+# Copy to config.yaml or run setup_wizard.py to create a real local config.
+# Do not put API keys, phone numbers, salary details, or personal profile data
+# in files that you upload publicly.
+
+ollama_model: "qwen2.5:7b"
+
+chrome_user_data_dir: "C:/Users/YOUR_USERNAME/AppData/Local/JobHunterJP/profile"
+chrome_executable_path: "C:/Program Files/Google/Chrome/Application/chrome.exe"
+chrome_profile: "Default"
+
+search_keywords:
+  - "Human Resources"
+  - "HR Business Partner"
+  - "People and Culture"
+search_location: "Your target location"
+remote_ok: true
+
+target_job_urls: []
+target_jobs_ignore_seen: true
+
+min_salary_aed_month: null
+acceptable_locations:
+  - "Your target city"
+  - "Remote"
+
+red_flag_keywords:
+  - "commission only"
+  - "unpaid"
+  - "MLM"
+  - "must have own visa"
+  - "100% cold calling"
+  - "nationals only"
+  - "citizens only"
+  - "locals only"
+
+profile_summary: >
+  Replace with a concise, non-secret candidate profile. Avoid phone numbers,
+  personal email addresses, exact salary, and other sensitive data in public files.
+min_fit_score: 70
+
+base_resume_pdf: ""
+tailor_resume: false
+
+easy_apply_answers:
+  "first name": ""
+  "last name": ""
+  "location": ""
+  "city": ""
+  "current location": ""
+  "phone country code": ""
+  "years of experience": ""
+  "notice period": ""
+  "current salary": ""
+  "expected salary": ""
+  "phone": ""
+  "email": ""
+  "willing to relocate": "Yes"
+  "authorized to work": "Yes"
+  "require sponsorship": "No"
+  "education": ""
+  "visa": ""
+
+qc_enabled: true
+qc_provider: "ollama"
+qc_ollama_model: "qwen2.5:7b"
+qc_max_batch: 15
+qc_jd_excerpt_chars: 1500
+qc_fallback: "local_only"
+
+form_ai_enabled: true
+form_ai_provider: "ollama"
+form_ai_ollama_model: "qwen2.5:7b"
+
+max_applications_per_session: 15
+min_action_delay_sec: 2
+max_action_delay_sec: 6
+seen_jobs_file: "seen_jobs.json"
+output_xlsx: "applications_log.xlsx"

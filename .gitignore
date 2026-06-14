@@ -1,0 +1,37 @@
+# Secrets and local configuration
+.env
+.env.*
+config.yaml
+
+# Runtime outputs
+*.log
+*.xlsx
+seen_jobs.json
+applications_log*.xlsx
+ai_form_answers.log
+unanswered_questions.log
+form_events.log
+
+# Local browser/session data
+profile/
+AutomationProfile/
+User Data/
+Cookies
+Local State
+
+# Archives and release artifacts
+archives/
+release/
+*.zip
+
+# Python/build cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
