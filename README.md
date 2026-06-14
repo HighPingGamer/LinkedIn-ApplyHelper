@@ -1,5 +1,6 @@
 # JobHunterJP
 
+***Please use a new Linkedin Profile and not your current LinkedIn Profile***
 Local LinkedIn Easy Apply helper for reviewing jobs, scoring fit, and submitting
 only when configured rules and QC approve.
 
